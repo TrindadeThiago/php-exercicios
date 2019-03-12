@@ -33,8 +33,8 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Exercicio 1 <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Exercicio 2</a>
+        <a class="nav-item nav-link active" href="index.html">Exercicio 1</a>
+        <a class="nav-item nav-link" href="rodizio.html">Exercicio 2</a>
         <a class="nav-item nav-link" href="#">Exercicio 3</a>
         <a class="nav-item nav-link" href="#">Exercicio 4</a>
       </div>
@@ -103,7 +103,7 @@
     <script>
       $('.formIMC').submit(() => {
 
-        let dados = jQuery(this).serialize();
+        let dados = $('.formIMC').serialize();
 
         $.ajax({
           type: "POST",
