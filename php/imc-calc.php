@@ -1,10 +1,10 @@
 <?php
-    if(!empty($_GET['peso'])){
-        $peso = $_GET['peso'];
+    if(!empty($_POST['peso'])){
+        $peso = $_POST['peso'];
     }
     
-    if(!empty($_GET['altura'])){
-        $altura = $_GET['altura'];
+    if(!empty($_POST['altura'])){
+        $altura = $_POST['altura'];
     }
 
     if(!empty($altura) && !empty($peso) ){
