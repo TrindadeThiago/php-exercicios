@@ -48,25 +48,9 @@
         </div>
         <div class="row">
             <div class="col-md">
-                <form action="php/rodizio.php" method="POST">
-                    <div class="form-group">
-                        <label for="placa">Selecione o ultimo digito de sua placa:</label>
-                        <select name="optPlaca" class="form-control-sm" id="placa">
-                            <option></option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="0">0</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Verificar</button>
-                </form>
+                <h4 class="sub-title text-dark">Area do rodizio</h4>
+                <iframe src="https://www.google.com/maps/d/embed?mid=1Xg6ACUNSiuS0IOr7p7t9c6IvLx4&hl=pt-BR" width="450"
+                    height="450"></iframe>
             </div>
             <div class="col-md">
                 <table class="table border">
@@ -99,6 +83,25 @@
                         </tr>
                     </tbody>
                 </table>
+                <form action="php/rodizio.php" method="POST">
+                    <div class="form-group">
+                        <label for="placa">Selecione o ultimo digito de sua placa:</label>
+                        <select name="optPlaca" class="form-control-sm" id="placa">
+                            <option></option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">0</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Verificar</button>
+                </form>
             </div>
         </div>
     </div>

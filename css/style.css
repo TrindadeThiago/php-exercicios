@@ -11,3 +11,10 @@ nav {
 .btn {
     margin-bottom: 10px;
 }
+iframe {
+    display: flex;
+    justify-content: center;
+}
+.sub-title {
+    font-size: 28px;
+}
