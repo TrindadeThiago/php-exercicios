@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sequência dos próximos 100 pares</title>
+    <title>Tabuada</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 
@@ -20,9 +19,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
-
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -31,38 +29,35 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="index.html">Exercicio 1</a>
                 <a class="nav-item nav-link" href="rodizio.html">Exercicio 2</a>
-                <a class="nav-item nav-link active" href="sequencia.html">Exercicio 3</a>
-                <a class="nav-item nav-link" href="tabuada.html">Exercicio 4</a>
+                <a class="nav-item nav-link" href="sequencia.html">Exercicio 3</a>
+                <a class="nav-item nav-link active" href="tabuada.html">Exercicio 4</a>
             </div>
         </div>
     </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="title text-dark">Sequência dos próximos 100 números pares</h3>
+                <h3 class="title text-dark">Tabuada</h3>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-06">
-                <form action="php/sequencia.php" class="formSEQ" method="GET">
-                    <div class="form-group">
-                        <label for="num">Número:</label>
-                        <input type="number" class="form-control-sm" id="num" name="num" placeholder="informe um número" />
-                    </div>
-                    <button class="btn btn-success">Verificar</button>
-                </form>
-            </div>
-            <div class="col-md-06"></div>
+        <div class="col-md-12">
+            <form action="" class="formTAB" method="GET">
+                <div class="form-group">
+                    <label for="num">Tabuada do:</label>
+                    <input type="number" class="form-control-sm" id="num" name="num" />
+                </div>
+                <button class="btn btn-danger">Mostrar tabuada</button>
+            </form>
         </div>
     </div>
     <script>
-        $('.formSEQ').submit(() => {
+        $('.formTAB').submit(() => {
   
-          let dados = $('.formSEQ').serialize();
+          let dados = $('.formTAB').serialize();
   
           $.ajax({
             type: "GET",
-            url: "php/sequencia.php",
+            url: "php/tabuada.php",
             data: dados,
             success: (data) => {
               alert(data)
@@ -73,5 +68,4 @@
         })
       </script>
 </body>
-
 </html>
