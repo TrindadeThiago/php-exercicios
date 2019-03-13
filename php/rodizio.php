@@ -5,7 +5,7 @@
         if($optPlaca == 1 || $optPlaca == 2){
             echo "Segunda-feira";
         }else if($optPlaca == 3 || $optPlaca == 4){
-            echo "Terca-feira";
+            echo "Terça-feira";
         }else if($optPlaca == 5 || $optPlaca == 6){
             echo "Quarta-feira";
         }else if($optPlaca == 7 || $optPlaca == 8){

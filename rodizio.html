@@ -83,7 +83,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <form action="php/rodizio.php" method="POST">
+                <form action="" class="formROD"method="POST">
                     <div class="form-group">
                         <label for="placa">Selecione o ultimo digito de sua placa:</label>
                         <select name="optPlaca" class="form-control-sm" id="placa">
@@ -105,6 +105,23 @@
             </div>
         </div>
     </div>
+    <script>
+        $('.formROD').submit(() => {
+  
+          let dados = $('.formROD').serialize();
+  
+          $.ajax({
+            type: "POST",
+            url: "php/rodizio.php",
+            data: dados,
+            success: (data) => {
+              alert(data)
+            }
+          })
+          return false
+  
+        })
+      </script>
 </body>
 
 </html>
